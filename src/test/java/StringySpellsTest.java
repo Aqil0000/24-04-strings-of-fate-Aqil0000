@@ -46,7 +46,7 @@ class StringySpellsTest {
     @ParameterizedTest
     @MethodSource("providedStrings_allMids")
     void findMids(String a, String b, String m){
-        String ans = StringySpells.middleFinder(a);
+        String ans = StringySpells.findMids(a);
         assertEquals(m,ans);
     }
 
